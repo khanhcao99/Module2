@@ -44,17 +44,18 @@ public class ProductManager implements CRUD<Product> {
     }
 
     public Product createProduct(){
-        System.out.println("Nhập vào mã sản phẩm: ");
-        int productCode = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập vào tên sản phẩm: ");
-        String name = scanner.nextLine();
-        System.out.println("Nhập vào giá sản phẩm: ");
-        double price = Double.parseDouble(scanner.nextLine());
-        System.out.println("Nhập vào số lượng sản phẩm: ");
-        int amount = Integer.parseInt(scanner.nextLine());
-        System.out.println("Nhập vào mô tả: ");
-        String descripstion = scanner.nextLine();
-        return new Product(productCode, name, price, amount, descripstion);
+            System.out.println("Nhập vào mã sản phẩm: ");
+            int productCode = Integer.parseInt(scanner.nextLine());
+            System.out.println("Nhập vào tên sản phẩm: ");
+            String name = scanner.nextLine();
+            System.out.println("Nhập vào giá sản phẩm: ");
+            double price = Double.parseDouble(scanner.nextLine());
+            System.out.println("Nhập vào số lượng sản phẩm: ");
+            int amount = Integer.parseInt(scanner.nextLine());
+            System.out.println("Nhập vào mô tả: ");
+            String descripstion = scanner.nextLine();
+            return new Product(productCode, name, price, amount, descripstion);
+
     }
 
     @Override
@@ -143,6 +144,7 @@ public class ProductManager implements CRUD<Product> {
                     }else {
                         break;
                     }
+                    break;
                 }
             }
 
