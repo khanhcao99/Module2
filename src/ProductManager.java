@@ -107,6 +107,7 @@ public class ProductManager implements CRUD<Product> {
             String descripstion = scanner.nextLine();
             product1.setDescripstion(descripstion);
             updateById(index,product1);
+            System.out.println("Cập nhập thành công!");
         }else {
             System.out.println("Mã sản phẩm không tồn tại!");
         }
@@ -138,6 +139,7 @@ public class ProductManager implements CRUD<Product> {
                     int choice = Integer.parseInt(scanner.nextLine());
                     if (choice == 1){
                         products.remove(product);
+                        System.out.println("Xóa thành công!");
                     }else {
                         break;
                     }
